@@ -1,0 +1,14 @@
+.logo__text--dark {
+    color: var(--dark-text-color);
+}
+
+.logo {
+    color: var(--logo-accent-color);
+    font-family: "Raleway", sans-serif;
+    @include font(26px, 700, 1.17);
+    // font-weight: 700;
+    // font-size: 26px;
+    //     line-height: 1.17;
+    text-decoration: none;
+
+}

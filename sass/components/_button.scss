@@ -1,0 +1,30 @@
+.button {
+    font-family: inherit;
+    cursor: pointer;
+    border-radius: 4px;
+    font-style: inherit;
+}
+.main-button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 32px;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+
+
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+    border: 0;
+    text-align: center;
+    @include font(16px, 700, 1.87, 0.06em);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition-property: background-color;
+    transition-delay: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {background-color: var(--hero-btn-active-color)} 
+}

@@ -1,0 +1,23 @@
+.privelegy__list {
+    --card-item: 4;
+}
+
+.privelegy__subtitle {
+    margin-bottom: 10px;
+
+    @include font(14px, none, 1.17);
+    // font-size: 14px;
+    // line-height: 1.17;
+    color: var(--dark-text-color);
+    text-transform: uppercase;
+}
+
+.privelegy__icon {
+    display: flex;
+    height: 120px;
+    background-color: var(--lite-grey-color);
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}

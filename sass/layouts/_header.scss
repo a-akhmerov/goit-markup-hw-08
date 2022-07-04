@@ -1,0 +1,18 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+    @include font(none, 500, 1.17, 0.02em);
+    // font-weight: 500;
+    // line-height: 1.17;
+    // letter-spacing: 0.02em;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+}

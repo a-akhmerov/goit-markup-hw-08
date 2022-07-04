@@ -1,0 +1,19 @@
+.mailing {
+    display: flex;
+}
+
+.mailing__icon {
+    margin-left: 10px;
+}
+
+.mailing__input {
+    height: 50px;
+    width: 358px;
+    margin-right: 12px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    padding-left: 16px;
+    color: var(--white-text-color);
+    outline: none;
+}

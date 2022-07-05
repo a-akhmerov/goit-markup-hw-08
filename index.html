@@ -11,13 +11,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="./css/main.min.css">
-  
- 
 </head>
 
 <body>
   <!-- Header -->
-  <header class="header">
+  <!-- <header class="header">
     <div class="container header__container">
       <a href="./index.html" class="logo header__logo">Web<span class="logo__text--dark">Studio</span></a>
       <nav class="nav">
@@ -52,7 +50,7 @@
         </li>
       </ul>
     </div>
-  </header>
+  </header> -->
 
     <!-- Main -->
     <main>
@@ -60,7 +58,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">
-            Эффективные решения для <br />
+            Эффективные решения для
             вашего бизнеса
           </h1>
           <button type="button" class="main-button button" data-modal-open>Заказать услугу</button>
@@ -68,9 +66,9 @@
 
       </section>
       <!-- Privelegy section  -->
+
       <section class="privelegy section">
         <div class="container">
-          <!-- Скрытый заголовок -->
           <h2 class="visually-hidden">Привелегии</h2>
           <ul class="privelegy__list list card-set">
             <li class="privelegy__item card-item">
@@ -125,6 +123,7 @@
         </div>
       </section>
       <!-- Occupation section-->
+
       <section class="occupation section">
         <div class="container">
           <h2 class="section-title occupation__title">Чем мы занимаемся</h2>
@@ -161,18 +160,30 @@
         </div>
       </section>
       <!-- Team section-->
-      <section class="team section">
+
+       <section class="team section">
         <div class="container">
           <h2 class="section-title team__title">Наша команда</h2>
           <ul class="team__list list card-set">
             <li class="team-card team__item card-item">
-              <img
+              <picture>
+                <source srcset="./images/Team-card-1.jpg"
+                media="(min-width:1200px)">
+                <source srcset="./images/Team-card-1-tab.jpg 1x,
+                ./images/Team-card-1-tab-2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="./images/Team-card-1-mob.jpg 1x,
+                ./images/Team-card-1-mob-2x.jpg 2x"
+                media="(max-width:480px)">
+                <img
                 src="./images/Team-card-1.jpg"
                 alt="Дизайнер продукта"
                 width="270"
                 height="260"
                 class="team__img"
               />
+              </picture>
+
               <div class="team-card__content">
                 <h3 class="team-card__subtitle">Игорь Демьяненко</h3>
                 <p class="team-card__text">Product Designer</p> 
@@ -206,13 +217,24 @@
              
             </li>
             <li class="team-card team__item card-item">
-              <img
+                <picture>
+                <source srcset="./images/Team-card-2.jpg"
+                media="(min-width:1200px)">
+                <source srcset="./images/Team-card-2-tab.jpg 1x,
+                ./images/Team-card-2-tab-2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="./images/Team-card-2-mob.jpg 1x,
+                ./images/Team-card-2-mob-2x.jpg 2x"
+                media="(max-width:480px)">
+                <img
                 src="./images/Team-card-2.jpg"
                 alt="Фронтенд разработчик"
                 width="270"
                 height="260"
                 class="team__img"
               />
+              </picture>
+
               <div class="team-card__content">
                 <h3 class="team-card__subtitle">Ольга Репина</h3>
                 <p class="team-card__text">Frontend Developer</p>
@@ -246,6 +268,15 @@
               
             </li>
             <li class="team-card team__item card-item">
+                <picture>
+                <source srcset="./images/Team-card-3.jpg"
+                media="(min-width:1200px)">
+                <source srcset="./images/Team-card-3-tab.jpg 1x,
+                ./images/Team-card-3-tab-2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="./images/Team-card-3-mob.jpg 1x,
+                ./images/Team-card-3-mob-2x.jpg 2x"
+                media="(max-width:480px)">
               <img
                 src="./images/Team-card-3.jpg"
                 alt="Маркетолог"
@@ -253,6 +284,8 @@
                 height="260"
                 class="team__img"
               />
+              </picture>
+
               <div class="team-card__content">
                 <h3 class="team-card__subtitle">Николай Тарасов</h3>
                 <p class="team-card__text">Marketing</p>
@@ -286,13 +319,24 @@
 
             </li>
             <li class="team-card team__item card-item">
-              <img
+                <picture>
+                <source srcset="./images/Team-card-4.jpg"
+                media="(min-width:1200px)">
+                <source srcset="./images/Team-card-4-tab.jpg 1x,
+                ./images/Team-card-4-tab-2x.jpg 2x"
+                media="(min-width: 768px)">
+                <source srcset="./images/Team-card-4-mob.jpg 1x,
+                ./images/Team-card-4-mob-2x.jpg 2x"
+                media="(max-width:480px)">
+                <img
                 src="./images/Team-card-4.jpg"
                 alt="ЮИ дизайнер"
                 width="270"
                 height="260"
                 class="team__img"
               />
+              </picture>
+             
               <div class="team-card__content">
                 <h3 class="team-card__subtitle">Михаил Ермаков</h3>
                 <p class="team-card__text">UI Designer</p>
@@ -329,7 +373,8 @@
         </div>
       </section>
       <!-- Clients section  -->
-      <section class="clients">
+
+      <section class="clients section">
         <div class="container">
           <h2 class="clients__title section-title">Постоянные клиенты</h2>
           <ul class="clients__list list card-set">
@@ -374,6 +419,7 @@
       </section>
     </main>
     <!-- Footer -->
+
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__item">
@@ -446,7 +492,8 @@
       </div>
     </footer>
     <!-- Modal-window -->
-      <div class="backdrop is-hidden" data-modal>
+
+      <!-- <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
               <svg class="close close-btn__icon" width="14" height="14">
@@ -504,8 +551,9 @@
             <button type="submit" class="main-button button"><span class="callback__button-text">Отправить</span></button>
             </form>
           </div>
-      </div>
+      </div> -->
     <!-- Modal window sctript -->
-    <script src="./js/modal.js"></script>
+    
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>

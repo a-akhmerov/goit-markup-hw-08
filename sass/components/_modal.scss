@@ -78,7 +78,7 @@
     justify-content: center;
     margin-bottom: 12px;
 
-    @include font(20px, none, 1.15);
+    @include font(20px, none, 1.15,none);
     // font-size: 20px;
     // line-height: 1.15;
     color: var(--dark-text-color);

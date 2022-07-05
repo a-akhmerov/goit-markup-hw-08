@@ -4,7 +4,7 @@
 
 .projects-card__overlay-text {
     display: flex;
-    @include font(18px, none, 1.55);
+    @include font(18px, none, 1.55,none);
     // font-size: 18px;
     // line-height: 1.55;
     color: var(--white-text-color);
@@ -58,7 +58,7 @@
 }
 
 .projects-card__text {
-    @include font(16px, none, 1.88);
+    @include font(16px, none, 1.88,none);
     // font-size: 16px;
     // line-height: 1.88;
 }

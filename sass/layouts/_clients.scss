@@ -1,14 +1,28 @@
-.clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+// .clients {
+//     padding: 60px;
+// }
+.clients>.container{
+    width: 100%;
 }
 
 .clients__list {
-    --card-item: 6;
+        --card-item: 2;
+    @media screen and(min-width:480px) {
+        
+        }
+     @media screen and(min-width:768px) {
+        --card-item: 3;
+    }
+     @media screen and(min-width:1200px) {
+        --card-item: 6;
+    }
 }
 
 .clients__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @media screen and(min-width:1200px) {
+        margin-bottom: 50px;
+    }
 }
 
 .clients__link {

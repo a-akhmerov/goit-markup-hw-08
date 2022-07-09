@@ -1,12 +1,26 @@
+.products .container{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    @include mobile{
+        width: 480px;
+    }
+    @include tablet{
+        width: 768px;
+    }
+    @include desktop{
+        width: 1200px;
+    }
+}
 .projects-card {
     background-color: var(--white-bcg-color);
+    @include tablet{
+    }
 }
 
 .projects-card__overlay-text {
     display: flex;
     @include font(18px, none, 1.55,none);
-    // font-size: 18px;
-    // line-height: 1.55;
     color: var(--white-text-color);
     padding: 63px 24px;
 }
@@ -49,9 +63,6 @@
 
 .projects-card__subtitle {
     @include font(18px, none, 2, 0.06em);
-    // font-size: 18px;
-    // line-height: 2;
-    // letter-spacing: 0.06em;
     color: var(--dark-text-color);
 
     margin-bottom: 4px;
@@ -59,12 +70,20 @@
 
 .projects-card__text {
     @include font(16px, none, 1.88,none);
-    // font-size: 16px;
-    // line-height: 1.88;
 }
 
 .projects-card__content {
     border: 1px solid #EEEEEE;
     padding: 20px 24px;
-    width: 100%;
+}
+.projects{
+    --card-item:1;
+            @include tablet {
+                --card-item:2;
+            }
+        
+            @include desktop {
+                --card-item:3;
+
+            }
 }

@@ -15,7 +15,7 @@
 
 <body>
   <!-- Header -->
-  <!-- <header class="header">
+  <header class="header">
     <div class="container header__container">
       <a href="./index.html" class="logo header__logo">Web<span class="logo__text--dark">Studio</span></a>
       <nav class="nav">
@@ -31,26 +31,71 @@
           </li>
         </ul>
       </nav>
-
-      <ul class="contact list">
-        <li class="contact__item">
-          <a href="mailto:info@devstudio.com" class="contact__link link">
-            <svg class="contact__icon" width="16" height="12">
-              <use href="./images/icons.svg#icon-mail"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="contact__item">
-          <a href="tel:+380961111111" class="contact__link link"><svg class="contact__icon" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+<ul class="contact list">
+  <li class="contact__item">
+    <a href="mailto:info@devstudio.com" class="contact__link link">
+      <svg class="contact__icon" width="16" height="12">
+        <use href="./images/icons.svg#icon-mail"></use>
+      </svg>
+      info@devstudio.com
+    </a>
+  </li>
+  <li class="contact__item">
+    <a href="tel:+380961111111" class="contact__link link"><svg class="contact__icon" width="10" height="16">
+        <use href="./images/icons.svg#icon-smartphone"></use>
+      </svg>
+      +38 096 111 11 11
+    </a>
+  </li>
+</ul>
+                    <button type="button" class="header__menu-btn">
+                      <svg class="mob-menu__icon-open" width="40" height="40">
+                        <use href="./images/icons.svg#icon-mob-menu"></use>
+                      </svg></button>
     </div>
-  </header> -->
+
+
+                    <div class="mob-menu visually-hidden">
+                      <div class="mob-menu__container"> 
+                        <div class="mob-menu__box-top">
+                                              <button type="button" class="mob-menu__close"><svg class="mob-menu__icon-close" width="40" height="40">
+                            <use href="./images/icons.svg#icon-mob-menu-close"></use>
+                          </svg></button>
+                            <ul class="mob-menu__list list">
+                              <li class="mob-menu__item">
+                                <a href="./index.html" class="mob-menu__link link mob-menu__link--selected">Студия</a>
+                              </li>
+                              <li class="mob-menu__item">
+                                <a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
+                              </li>
+                              <li class="mob-menu__item">
+                                <a href="" class="mob-menu__link link">Контакты</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="mob-menu__box-bottom">
+                            <ul class="mob-menu__contact list">
+                              <li class="mob-menu__contact-item">
+                                <a href="tel:+380961111111" class="mob-contact__tel-link link">
+                                    +38 096 111 11 11
+                                </a>
+                              </li>
+                              <li class="mob-menu__contact-item">
+                                <a href="mailto:info@devstudio.com" class="mob-contact__email-link link">
+                                  info@devstudio.com
+                                </a>
+                              </li>
+                            </ul>
+                              <ul class="mob-menu__soc-list list">
+                                <li class="mob-menu__soc-item"> <a href="" class="mob-menu__soc-link link">Instagram</a></li>
+                                <li class="mob-menu__soc-item"> <a href="" class="mob-menu__soc-link mob-soc-link link">Twitter</a></li>
+                                <li class="mob-menu__soc-item"> <a href="" class="mob-menu__soc-link mob-soc-link link">Facebook</a></li>
+                                <li class="mob-menu__soc-item"> <a href="" class="mob-menu__soc-link mob-soc-link link">LinkedIn</a></li>
+                              </ul>
+                            </div>
+                      </div>
+    </div>
+  </header>
 
     <!-- Main -->
     <main>
@@ -493,7 +538,7 @@
     </footer>
     <!-- Modal-window -->
 
-      <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
               <svg class="close close-btn__icon" width="14" height="14">
@@ -551,9 +596,10 @@
             <button type="submit" class="main-button button"><span class="callback__button-text">Отправить</span></button>
             </form>
           </div>
-      </div> -->
+      </div>
     <!-- Modal window sctript -->
     
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

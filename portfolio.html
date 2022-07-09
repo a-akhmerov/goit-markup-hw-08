@@ -33,7 +33,6 @@
           </li>
         </ul>
       </nav>
-  
       <ul class="contact list">
         <li class="contact__item">
           <a href="mailto:info@devstudio.com" class="contact__link link">
@@ -51,6 +50,52 @@
           </a>
         </li>
       </ul>
+      <button type="button" class="header__menu-btn">
+        <svg class="mob-menu__icon-open" width="40" height="40">
+          <use href="./images/icons.svg#icon-mob-menu"></use>
+        </svg></button>
+    </div>
+  
+  
+    <div class="mob-menu visually-hidden">
+      <div class="mob-menu__container">
+        <div class="mob-menu__box-top">
+          <button type="button" class="mob-menu__close"><svg class="mob-menu__icon-close" width="40" height="40">
+              <use href="./images/icons.svg#icon-mob-menu-close"></use>
+            </svg></button>
+          <ul class="mob-menu__list list">
+            <li class="mob-menu__item">
+              <a href="./index.html" class="mob-menu__link link ">Студия</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="./portfolio.html" class="mob-menu__link link mob-menu__link--selected">Портфолио</a>
+            </li>
+            <li class="mob-menu__item">
+              <a href="" class="mob-menu__link link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mob-menu__box-bottom">
+          <ul class="mob-menu__contact list">
+            <li class="mob-menu__contact-item">
+              <a href="tel:+380961111111" class="mob-contact__tel-link link">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="mob-menu__contact-item">
+              <a href="mailto:info@devstudio.com" class="mob-contact__email-link link">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="mob-menu__soc-list list">
+            <li class="mob-menu__soc-item"> <a href="" class="mob-menu__soc-link link">Instagram</a></li>
+            <li class="mob-menu__soc-item"> <a href="" class="mob-menu__soc-link mob-soc-link link">Twitter</a></li>
+            <li class="mob-menu__soc-item"> <a href="" class="mob-menu__soc-link mob-soc-link link">Facebook</a></li>
+            <li class="mob-menu__soc-item"> <a href="" class="mob-menu__soc-link mob-soc-link link">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </header>
     <!-- Main -->
@@ -87,13 +132,25 @@
               
               <a href="" target="_blank" rel="noreferrer noopener" class="projects-card__link link">
                 <div class="projects-card__thumb">
+                   <picture>
+                <source srcset="./images/portfolio-project-1.jpg 1x,
+                ./images/portfolio-project-1-2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="./images/portfolio-project-1-tab.jpg 1x,
+                ./images/portfolio-project-1-tab-2x.jpg 2x "
+                media="(min-width: 768px)">
+                <source srcset="./images/portfolio-project-1-mob.jpg 1x,
+                ./images/portfolio-project-1-mob-2x.jpg 2x"
+                media="(max-width:767px)">
                 <img
                   src="./images/portfolio-project-1.jpg"
                   alt="Сайт Технокряк"
-                  width="370"
-                  height="294"
+                  width=""
+                  height=""
                   class="projects-card__img"
                 />
+              </picture>
+                
                 <div class="projects-card__overlay">
                   <p class="projects-card__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
@@ -106,13 +163,25 @@
             </li>
             <li class="projects-card card-item">
               <a href="" target="_blank" rel="noreferrer noopener" class="projects-card__link link"><div class="projects-card__thumb">
-                <img
+                <picture>
+                <source srcset="./images/portfolio-project-2.jpg 1x,
+                ./images/portfolio-project-2-2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="./images/portfolio-project-2-tab.jpg 1x,
+                ./images/portfolio-project-2-tab-2x.jpg 2x "
+                media="(min-width: 768px)">
+                <source srcset="./images/portfolio-project-2-mob.jpg 1x,
+                ./images/portfolio-project-2-mob-2x.jpg 2x"
+                media="(max-width:767px)">
+               <img
                   src="./images/portfolio-project-2.jpg"
                   alt="Постер New Orlean vs Golden Star"
-                  width="370"
-                  height="294"
+                  width=""
+                  height=""
                   class="projects-card__img"
-                /><div class="projects-card__overlay">
+                />
+              </picture>
+               <div class="projects-card__overlay">
                   <p class="projects-card__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
                 </div></div>
@@ -126,13 +195,25 @@
             </li>
             <li class="projects-card card-item">
               <a href="" target="_blank" rel="noreferrer noopener" class="projects-card__link link"><div class="projects-card__thumb">
-                <img
+                <picture>
+                <source srcset="./images/portfolio-project-3.jpg 1x,
+                ./images/portfolio-project-3-2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="./images/portfolio-project-3-tab.jpg 1x,
+                ./images/portfolio-project-3-tab-2x.jpg 2x "
+                media="(min-width: 768px)">
+                <source srcset="./images/portfolio-project-3-mob.jpg 1x,
+                ./images/portfolio-project-3-mob-2x.jpg 2x"
+                media="(max-width:767px)">
+              <img
                   src="./images/portfolio-project-3.jpg"
                   alt="Логотип ресторана Seafood"
-                  width="370"
-                  height="294"
+                  width=""
+                  height=""
                   class="projects-card__img"
-                /><div class="projects-card__overlay">
+                />
+                </picture>
+                <div class="projects-card__overlay">
                   <p class="projects-card__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
                 </div></div>
@@ -144,13 +225,25 @@
             </li>
             <li class="projects-card card-item">
               <a href="" target="_blank" rel="noreferrer noopener" class="projects-card__link link"><div class="projects-card__thumb">
+                <picture>
+                <source srcset="./images/portfolio-project-4.jpg 1x,
+                ./images/portfolio-project-4-2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="./images/portfolio-project-4-tab.jpg 1x,
+                ./images/portfolio-project-4-tab-2x.jpg 2x "
+                media="(min-width: 768px)">
+                <source srcset="./images/portfolio-project-4-mob.jpg 1x,
+                ./images/portfolio-project-4-mob-2x.jpg 2x"
+                media="(max-width:767px)">
                 <img
                   src="./images/portfolio-project-4.jpg"
                   alt="Наушники"
-                  width="370"
-                  height="294"
+                  width=" "
+                  height=" "
                   class="projects-card__img"
-                /><div class="projects-card__overlay">
+                />
+                </picture>
+                <div class="projects-card__overlay">
                   <p class="projects-card__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
                 </div></div>
@@ -162,13 +255,25 @@
             </li>
             <li class="projects-card card-item">
               <a href="" target="_blank" rel="noreferrer noopener" class="projects-card__link link"><div class="projects-card__thumb">
+                <picture>
+                <source srcset="./images/portfolio-project-5.jpg 1x,
+                ./images/portfolio-project-5-2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="./images/portfolio-project-5-tab.jpg 1x,
+                ./images/portfolio-project-5-tab-2x.jpg 2x "
+                media="(min-width: 768px)">
+                <source srcset="./images/portfolio-project-5-mob.jpg 1x,
+                ./images/portfolio-project-5-mob-2x.jpg 2x"
+                media="(max-width:767px)">
                 <img
                   src="./images/portfolio-project-5.jpg"
                   alt="Картонные коробки"
-                  width="370"
-                  height="294"
+                  width=" "
+                  height=" "
                   class="projects-card__img"
-                /><div class="projects-card__overlay">
+                />
+                </picture>
+                <div class="projects-card__overlay">
                   <p class="projects-card__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
                 </div></div>
@@ -180,13 +285,25 @@
             </li>
             <li class="projects-card card-item">
               <a href="" target="_blank" rel="noreferrer noopener" class="projects-card__link link"><div class="projects-card__thumb">
+                <picture>
+                <source srcset="./images/portfolio-project-6.jpg 1x,
+                ./images/portfolio-project-6-2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="./images/portfolio-project-6-tab.jpg 1x,
+                ./images/portfolio-project-6-tab-2x.jpg 2x "
+                media="(min-width: 768px)">
+                <source srcset="./images/portfolio-project-6-mob.jpg 1x,
+                ./images/portfolio-project-6-mob-2x.jpg 2x"
+                media="(max-width:767px)">
                 <img
                   src="./images/portfolio-project-6.jpg"
                   alt="Веб сайт Inspiration has no Borders"
-                  width="370"
-                  height="294"
+                  width=" "
+                  height=" "
                   class="projects-card__img"
-                /><div class="projects-card__overlay">
+                />
+                </picture>
+<div class="projects-card__overlay">
                   <p class="projects-card__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
                 </div></div>
@@ -198,13 +315,25 @@
             </li>
             <li class="projects-card card-item">
               <a href="" target="_blank" rel="noreferrer noopener" class="projects-card__link link"><div class="projects-card__thumb">
+                <picture>
+                <source srcset="./images/portfolio-project-7.jpg 1x,
+                ./images/portfolio-project-7-2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="./images/portfolio-project-7-tab.jpg 1x,
+                ./images/portfolio-project-7-tab-2x.jpg 2x "
+                media="(min-width: 768px)">
+                <source srcset="./images/portfolio-project-7-mob.jpg 1x,
+                ./images/portfolio-project-7-mob-2x.jpg 2x"
+                media="(max-width:767px)">
                 <img
                   src="./images/portfolio-project-7.jpg"
                   alt="Журнал"
-                  width="370"
-                  height="294"
+                  width=" "
+                  height=" "
                   class="projects-card__img"
-                /><div class="projects-card__overlay">
+                />
+                </picture>
+<div class="projects-card__overlay">
                   <p class="projects-card__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
                 </div></div>
@@ -216,13 +345,25 @@
             </li>
             <li class="projects-card card-item">
               <a href="" target="_blank" rel="noreferrer noopener" class="projects-card__link link"><div class="projects-card__thumb">
+                <picture>
+                <source srcset="./images/portfolio-project-8.jpg 1x,
+                ./images/portfolio-project-8-2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="./images/portfolio-project-8-tab.jpg 1x,
+                ./images/portfolio-project-8-tab-2x.jpg 2x "
+                media="(min-width: 768px)">
+                <source srcset="./images/portfolio-project-8-mob.jpg 1x,
+                ./images/portfolio-project-8-mob-2x.jpg 2x"
+                media="(max-width:767px)">
                 <img
                   src="./images/portfolio-project-8.jpg"
                   alt="Бирка"
-                  width="370"
-                  height="294"
+                  width=" "
+                  height=" "
                   class="projects-card__img"
-                /><div class="projects-card__overlay">
+                />
+                </picture>
+<div class="projects-card__overlay">
                   <p class="projects-card__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
                 </div></div>
@@ -233,14 +374,27 @@
               >
             </li>
             <li class="projects-card card-item">
+              
               <a href="" target="_blank" rel="noreferrer noopener" class="projects-card__link link"><div class="projects-card__thumb">
+                <picture>
+                <source srcset="./images/portfolio-project-9.jpg 1x,
+                ./images/portfolio-project-9-2x.jpg 2x"
+                media="(min-width:1200px)">
+                <source srcset="./images/portfolio-project-9-tab.jpg 1x,
+                ./images/portfolio-project-9-tab-2x.jpg 2x "
+                media="(min-width: 768px)">
+                <source srcset="./images/portfolio-project-9-mob.jpg 1x,
+                ./images/portfolio-project-9-mob-2x.jpg 2x"
+                media="(max-width:767px)">
                 <img
                   src="./images/portfolio-project-9.jpg"
                   alt="Работа за ноутбуком"
-                  width="370"
-                  height="294"
+                  width=" "
+                  height=" "
                   class="projects-card__img"
-                /><div class="projects-card__overlay">
+                />
+                </picture>
+                <div class="projects-card__overlay">
                   <p class="projects-card__overlay-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
                 </div></div>
@@ -316,5 +470,7 @@
         </div>
       </div>
     </footer>
+
+      <script src="./js/menu.js"></script>
   </body>
 </html>

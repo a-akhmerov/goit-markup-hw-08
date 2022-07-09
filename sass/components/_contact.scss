@@ -1,10 +1,35 @@
 .contact {
-    display: flex;
+    display: none;
     margin-left: auto;
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+    }
+    @include desktop{
+        flex-direction: row;
+    }
 }
-
+.contact__link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+    @include tablet{
+    padding: 0;
+    }
+}
 .contact__item:not(:last-child) {
     margin-right: 50px;
+
+    @media screen and(min-width:768px) and (max-width:1200px){
+        margin-right: 0;
+        margin-bottom: 10px;
+    } 
+
 }
 
 .contact__icon {

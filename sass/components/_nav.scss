@@ -1,3 +1,9 @@
+.nav{
+    display: none;
+    @include tablet{
+        display: flex;
+    }
+}
 .nav__list {
     display: flex;
     margin-left: auto;
@@ -12,8 +18,7 @@ margin-right: 50px;
 }
 }
 
-.nav__link,
-.contact__link {
+.nav__link {
     display: flex;
     align-items: center;
     padding-top: 32px;

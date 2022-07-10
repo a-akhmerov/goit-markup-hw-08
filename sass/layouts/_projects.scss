@@ -45,6 +45,7 @@
 .projects-card__link {
     display: flex;
     flex-direction: column;
+    height: 100%;
 
     transition-property: color, background-color, box-shadow, fill;
     transition-duration: 250ms;
@@ -73,6 +74,7 @@
 .projects-card__content {
     border: 1px solid #EEEEEE;
     padding: 20px 24px;
+    flex-grow: 1;
     }
 
 .projects{

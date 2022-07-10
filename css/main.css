@@ -916,11 +916,6 @@ body {
     line-height: 1.16;
   }
 }
-@media screen and (max-width: 480px) {
-  .callback-checkbox__label {
-    flex-wrap: wrap;
-  }
-}
 
 .callback-checkbox__icon-box {
   display: inline-block;

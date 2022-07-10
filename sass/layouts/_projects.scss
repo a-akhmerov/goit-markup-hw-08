@@ -14,8 +14,6 @@
 }
 .projects-card {
     background-color: var(--white-bcg-color);
-    @include tablet{
-    }
 }
 
 .projects-card__overlay-text {
@@ -75,7 +73,8 @@
 .projects-card__content {
     border: 1px solid #EEEEEE;
     padding: 20px 24px;
-}
+    }
+
 .projects{
     --card-item:1;
             @include tablet {
@@ -84,6 +83,5 @@
         
             @include desktop {
                 --card-item:3;
-
             }
 }

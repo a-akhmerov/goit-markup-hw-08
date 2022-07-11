@@ -1,5 +1,4 @@
 .footer {
-    width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--dark-bcg-color);
@@ -16,10 +15,6 @@
 .footer__item:not(:last-child) {
     @media screen and (max-width:767px){
     margin-bottom: 60px;
-    }
-    @media screen and (mai-width:767px) {
-            
-            margin-bottom: 60px;
     }
     @include desktop{
     margin-right: 70px;    
@@ -64,22 +59,16 @@
 }
 
 .footer__container {
-    width: 100%;
 
-    @include mobile{
-        width: 480px;
-    }
     @include tablet{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        width: 768px;
     }
     @include desktop{
         display: flex;
         flex-direction: row;
         align-items: baseline;
-        width: 1200px;
     }
 }
 
@@ -93,8 +82,8 @@
 }
 .adress__list{
         display: flex;
-            flex-direction: column;
-            align-items: center;
+        flex-direction: column;
+        align-items: center;
     @media screen and (max-width:767px) {
     }
 

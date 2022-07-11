@@ -5,10 +5,8 @@
 .logo {
     color: var(--logo-accent-color);
     font-family: "Raleway", sans-serif;
-    @include font(26px, 700, 1.17,none);
-    // font-weight: 700;
-    // font-size: 26px;
-    //     line-height: 1.17;
+    @include font(26px, 700, 1.17,null);
+
     text-decoration: none;
 
 }

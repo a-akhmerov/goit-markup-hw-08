@@ -56,8 +56,6 @@
 
 
                     <div class="mob-menu visually-hidden">
-                      <div class="mob-menu__container"> 
-                        <div class="mob-menu__box-top">
                                               <button type="button" class="mob-menu__close"><svg class="mob-menu__icon-close" width="40" height="40">
                             <use href="./images/icons.svg#icon-mob-menu-close"></use>
                           </svg></button>
@@ -72,7 +70,6 @@
                                 <a href="" class="mob-menu__link link">Контакты</a>
                               </li>
                             </ul>
-                          </div>
                           <div class="mob-menu__box-bottom">
                             <ul class="mob-menu__contact list">
                               <li class="mob-menu__contact-item">
@@ -94,7 +91,6 @@
                               </ul>
                             </div>
                       </div>
-    </div>
   </header>
 
     <!-- Main -->
@@ -213,18 +209,18 @@
             <li class="team-card team__item card-item">
               <picture>
                 <source srcset="./images/Team-card-1.jpg"
-                media="(min-width:1200px)">
+                media="(min-width:1200px)" type="image/jpeg">
                 <source srcset="./images/Team-card-1-tab.jpg 1x,
                 ./images/Team-card-1-tab-2x.jpg 2x"
-                media="(min-width: 768px)">
+                media="(min-width: 768px)" type="image/jpeg">
                 <source srcset="./images/Team-card-1-mob.jpg 1x,
                 ./images/Team-card-1-mob-2x.jpg 2x"
-                media="(max-width:480px)">
+                media="(max-width:767px)" type="image/jpeg">
                 <img
-                src="./images/Team-card-1.jpg"
+                src="./images/Team-card-1-mob.jpg"
                 alt="Дизайнер продукта"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
                 class="team__img"
               />
               </picture>
@@ -593,9 +589,9 @@
                 <span class="callback-checkbox__icon-box"><svg class="callback-checkbox__icon" width="12" height="12">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg></span>
-                
+                <span>
                 Соглашаюсь с рассылкой и принимаю <a href="" class="callback-checkbox__link">Условия договора</a>
-              </label>
+              </span></label>
             </div>
             <button type="submit" class="main-button button"><span class="callback__button-text">Отправить</span></button>
             </form>

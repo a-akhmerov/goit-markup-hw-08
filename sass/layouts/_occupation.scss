@@ -4,6 +4,9 @@
     @media screen and (min-width:1200px) {
         display: block;
     }
+    @include desktop{
+        --card-item:3;
+    }
 }
 
 
@@ -20,10 +23,10 @@
     justify-content: center;
     align-items: center;
 
-    @include font(none, 700, 1.14,none);
+    @include font(null, 700, 1.14,null);
     text-transform: uppercase;
     color: var(--white-text-color);
     background-color: rgba(47, 48, 58, 0.8);
-    width: 100%;
+    width: 370px;
     height: 70px;
 }

@@ -1,5 +1,4 @@
 .privelegy__list {
-    --card-item: 1;
     @media screen and (min-width:768px) {
             max-width: 768px;
             --card-item:2;
@@ -9,13 +8,15 @@
             --card-item: 4;
         }
 }
-.privelegy__item{
-}
+
 
 .privelegy__subtitle {
     margin-bottom: 10px;
-
-    @include font(14px, none, 1.17,none);
+    text-align: center;
+    @include tablet{
+        text-align: start;
+    }
+    @include font(14px, null, 1.17,null);
     color: var(--dark-text-color);
     text-transform: uppercase;
 }
@@ -35,17 +36,4 @@
     padding-top: 94px;
     padding-bottom: 94px;
         }
-}
-.privelegy >.container{
-    width: 100%;
-    @include mobile{
-        width: 480px;
-    }
-    
-    @media screen and (min-width:768px) {
-        width: 768px;
-    }
-    @media screen and (min-width:1200px) {
-        width: 1200px;
-    }
 }

@@ -1,16 +1,6 @@
 .products .container{
-    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-    @include mobile{
-        width: 480px;
-    }
-    @include tablet{
-        width: 768px;
-    }
-    @include desktop{
-        width: 1200px;
-    }
 }
 .projects-card {
     background-color: var(--white-bcg-color);
@@ -61,14 +51,14 @@
 
 
 .projects-card__subtitle {
-    @include font(18px, none, 2, 0.06em);
+    @include font(18px, null, 2, 0.06em);
     color: var(--dark-text-color);
 
     margin-bottom: 4px;
 }
 
 .projects-card__text {
-    @include font(16px, none, 1.88,none);
+    @include font(16px, null, 1.88,null);
 }
 
 .projects-card__content {
@@ -78,7 +68,6 @@
     }
 
 .projects{
-    --card-item:1;
             @include tablet {
                 --card-item:2;
             }

@@ -26,7 +26,7 @@
 
 .callback__title {
     display: flex;
-    @include font(12px, none, 1.16, 0.01em);
+    @include font(12px, null, 1.16, 0.01em);
     // font-size: 12px;
     // letter-spacing: 0.01em;
     // line-height: 1.16;
@@ -97,7 +97,8 @@
 
 
 .callback-checkbox__label {
-    display: inline-block;
+    display: flex;
+    align-items: center;
     // align-items: center;
     // justify-content: center;
     cursor: pointer;

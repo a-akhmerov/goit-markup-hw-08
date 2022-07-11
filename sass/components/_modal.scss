@@ -56,10 +56,12 @@
     left: 50%;
 
     width: 450px;
-    height: 609px;
+    max-height: 609px;
+    height: 100%;
+    overflow: auto;
     @include tablet{
     width: 528px;
-    height: 581px;  
+    max-height: 581px;  
     }
     @media screen and (max-width:480px) {
         width: calc(100% - 30px);
@@ -83,13 +85,10 @@
 
 .modal__title {
     display: flex;
-    // justify-content: center;
     margin-bottom: 12px;
     text-align: center;
 
-    @include font(20px, none, 1.15,none);
-    // font-size: 20px;
-    // line-height: 1.15;
+    @include font(20px, null, 1.15,null);
     color: var(--dark-text-color);
 }
 

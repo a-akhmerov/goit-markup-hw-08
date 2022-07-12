@@ -13,7 +13,7 @@
 }
 
 .footer__item:not(:last-child) {
-    @media screen and (max-width:767px){
+    @media screen and (max-width:1200px){
     margin-bottom: 60px;
     }
     @include desktop{
@@ -22,9 +22,7 @@
 }
 
 .footer__item:last-child {
-    @include tablet{
-    margin-top: 60px;
-    }
+
     @include desktop{
     margin-left: auto;   
     }
